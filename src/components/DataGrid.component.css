@@ -1,0 +1,11 @@
+.flex {
+  display: flex;
+}
+
+.downloadButton {
+  background: none;
+  padding: 5px;
+  margin-left: 20px;
+  border: none;
+  outline :none;
+}
