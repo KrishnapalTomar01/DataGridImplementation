@@ -1,6 +1,4 @@
 import { useEffect, useRef } from "react";
-import "./Checkbox.styles.css";
-import classNames from "classnames";
 
 interface CheckBoxProps extends React.InputHTMLAttributes<HTMLInputElement> {
   indeterminate: boolean;
@@ -9,14 +7,10 @@ interface CheckBoxProps extends React.InputHTMLAttributes<HTMLInputElement> {
 
 export const Checkbox = ({
   indeterminate = false,
-  label,
-  color,
-  disabled,
   name,
   value,
   onChange,
   checked,
-  ...props
 }: CheckBoxProps) => {
   const cRef = useRef<HTMLInputElement>(null);
 
@@ -27,14 +21,8 @@ export const Checkbox = ({
   }, [cRef, indeterminate]);
 
   return (
-    <div className="checkbox-content">
-      <label
-        className={classNames(
-          { ...props },
-          "checkbox",
-          indeterminate && "checkbox-indeterminate"
-        )}
-      >
+    <div>
+      <label>
         <input
           type="checkbox"
           name={name}

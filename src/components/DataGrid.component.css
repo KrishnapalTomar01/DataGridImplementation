@@ -1,11 +1,24 @@
 .flex {
-  display: flex;
+    display: flex;
 }
 
 .downloadButton {
-  background: none;
-  padding: 5px;
-  margin-left: 20px;
-  border: none;
-  outline :none;
+    background: none;
+    padding: 5px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+}
+
+.downloadButton:focus,
+.downloadButton:focus-visible {
+    outline: none
+}
+
+.downloadButton:hover {
+    background-color: #eee;
+}
+
+.downloadButton:disabled {
+    background: none;
 }
