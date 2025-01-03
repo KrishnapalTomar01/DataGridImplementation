@@ -1,24 +1,61 @@
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .downloadButton {
-    background: none;
-    padding: 5px;
-    margin-left: 20px;
-    border: none;
-    outline: none;
+  background: none;
+  padding: 5px;
+  margin-left: 20px;
+  border: none;
+  outline: none;
 }
 
 .downloadButton:focus,
 .downloadButton:focus-visible {
-    outline: none
+  outline: none;
 }
 
 .downloadButton:hover {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 .downloadButton:disabled {
-    background: none;
+  background: none;
+}
+
+th,
+td {
+  padding: 15px 30px;
+  text-align: left;
+}
+
+table,
+td,
+th {
+  border-top: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.tableHeader {
+    padding: 10px 0px 10px 30px;
+    display: flex;
+}
+
+.tableHeader > div {
+    padding: 5px 0px;
+}
+
+.selectedTextHeader {
+    margin-left: 10px;
 }

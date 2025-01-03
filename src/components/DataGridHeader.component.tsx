@@ -44,7 +44,7 @@ export const DataGridHeader = ({
   }, [selectedDevices]);
 
   return (
-    <div className="flex">
+    <div className="tableHeader">
       <Checkbox
         checked={selectedDevices.length === deviceList.length}
         indeterminate={
@@ -54,7 +54,7 @@ export const DataGridHeader = ({
         onChange={(event) => onSelectAllCheckBoxClick(event)}
       />
 
-      <div>
+      <div className="selectedTextHeader">
         {selectedDevices.length > 0 ? selectedDevices.length : "None"} selected
       </div>
 
